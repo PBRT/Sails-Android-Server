@@ -1,0 +1,54 @@
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+<script>
+
+	function notification(){
+		jsinterface.notification();
+	}
+	function camera(){
+		jsinterface.runCamera();
+	}
+	function toast(){
+		jsinterface.toast();
+	}
+	function gps(){
+		jsinterface.getGps();
+	}
+
+</script>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hybrid Android Sails js</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="jumbotron">
+	  <h2 style="text-align:center">Native components</h2>
+	  </br>
+	  </br>
+	  </br>
+	  <div class="btn-group btn-group-justified">
+		<div class="btn-group">
+			<button type="button" onClick="notification()" class="btn btn-default"><span class="glyphicon glyphicon-hand-up"></span> Notif</button>
+			
+		</div>
+		<div class="btn-group">
+			<button type="button" onClick="toast()" class="btn btn-default"><span class="glyphicon glyphicon-text-width"></span> Toast</button>
+		</div>
+		</div>
+		<div class="btn-group btn-group-justified">
+		<div class="btn-group">
+			<button type="button" onClick="camera()" class="btn btn-default"><span class="glyphicon glyphicon-camera"></span> Camera</button>
+		</div>
+		<div class="btn-group">
+			<button type="button" onClick="gps()" class="btn btn-default"><span class="glyphicon glyphicon-screenshot"></span> GPS</button>
+		</div>
+		</div>
+	</div>
+</div>
